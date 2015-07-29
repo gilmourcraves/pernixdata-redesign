@@ -1,0 +1,40 @@
+.search {
+    background: url(../images/sprite.png) no-repeat -2px -66px;
+    width: 19px;
+    height: 18px;
+    float: right;
+    margin: 6px 0 0;
+    text-indent: -9999px;
+}
+
+#logo-pernixdata {
+    width: 140px;
+}
+
+#wrapper-nav {
+    clear:left;
+    float:none;
+}
+
+.logo {
+    float: left;
+    margin: 0;
+}
+
+#nav > .region > ul.menu > li > a {
+    font-weight: 600;
+}
+
+#nav ul li a {
+    padding: 0 20px 22px 0;
+}
+
+/*#nav > .region > ul.menu > li.first > a {
+    padding: 0 20px 22px 0;
+}*/
+
+
+
+#nav .region-header {
+    padding-top: 20px;
+}

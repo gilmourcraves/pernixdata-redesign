@@ -1,0 +1,331 @@
+
+
+#small_img img{
+/*    max-width: 120px;*/
+}
+#lgbx{
+  //  max-width:905px;
+}
+#gallery img{
+  //  height: 145px;
+}
+.small_gallery #gallery img{
+  //  height: 120px;
+}
+#tab-one .carousel_head{
+    color: #000;
+    border-bottom:1px solid #ececec;
+    margin-bottom: 30px;
+    font: 1.5em/1.8em "proxima-nova", Arial, Helvetica, sans-serif;
+}
+.careers_tab .company-posts{
+    border: none;
+    padding: 0px;
+}
+.careers_tab #tab-two p{
+    margin-top: 0px;
+}
+#jobviteframe{
+    height: 1200px !important;
+}
+.careers_tab .tab-panels {
+    border:1px solid #ececec;
+    padding: 25px 30px;
+}
+.careers_tab .increase h2{
+    border-bottom:1px solid #ececec;
+}
+#carousel{
+    margin-bottom: 30px;
+}
+.small_gallery{
+    position: relative;
+}
+.small_gallery .back, 
+.small_gallery .next{
+    display: none;
+}
+#small_img .back{
+    position: absolute;
+    left: 0px;
+    top: 41%;
+    max-width: 10px;
+   z-index: 99;
+   background: #dfdfdf;
+   padding:  5px;
+   cursor: pointer;
+}
+#small_img .next{
+      position: absolute;
+    right: 0px;
+    top: 41%;
+    max-width: 10px; 
+     z-index: 99;
+   background: #dfdfdf;
+   padding:  5px;
+    cursor: pointer;
+}
+#small_img .back img, #small_img .next img{
+ width:100%;
+   
+}
+#carousel{
+    position: relative;
+}
+#lgbox_head span{
+    width: 1px;
+display: block;
+background: #dfdfdf;
+height: 13px;
+position: absolute;
+right: 29px;
+top: 11.8px;
+    }
+#lgbox_head{
+    margin-left: -185px;
+    width:100%;
+    height:30px;
+    margin-bottom:25px;
+    border-bottom:1px solid #efefef;
+  
+}
+#lgbox_head h1{ 
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+color: #555;
+}
+#small_img{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    margin-left: -40px;
+   overflow: hidden;
+}
+.forward{
+    position: absolute;
+    left:0px;
+   
+    max-width: 10px;
+    top: 41%;
+    z-index: 1;
+    background-color: #ddd;
+padding:5px;
+
+
+cursor: pointer;
+}
+.forward img, .backward img{
+max-width: 10px;
+width: 100%;
+}
+#small_img .forward img, #small_img .backward img{
+max-width: 10px;
+width: 100%;
+}
+.backward{
+    position: absolute;
+    right: 0px;
+ 
+    max-width: 10px;
+    top: 41%;
+    z-index: 1;
+    background-color: #ddd;
+padding:5px;
+
+cursor: pointer;
+}
+#gallery img { -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(100%);
+transition: all .8s;
+   -webkit-transition: all .8s;
+   float: left;
+   margin:0px ;
+}
+.small_gallery #gallery img{
+    margin: 0px 5px;
+}
+#gallery img:hover{
+    -webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+ filter: none;
+filter: grayscale(0%);
+}
+#small_img #gallery img { -webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+filter: grayscale(0%);
+opacity: 0.5;
+    filter: none;
+transition: all 1s;
+   -webkit-transition: all 1s;
+}
+#small_img #gallery img:hover{
+  opacity: 1;  
+  cursor: pointer;
+  transition: all 1s;
+   -webkit-transition: all 1s;
+}
+#lgbx img{
+/*    border: 3px solid red;*/
+}
+.small_img{
+    width:100%;
+    overflow: hidden;
+}
+
+#carousel_inner{
+    width:100%;
+    overflow: hidden;
+   
+}
+#lgbx .small_img{
+     width:96%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 2%;
+}
+#gallery{
+    width:9999px;
+    position: relative;
+}
+#lgbx,
+#lgbx_bcg { position: fixed }
+#lgbx_outer{
+    border: 5px solid red;
+}
+#lgbx_bcg {
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgba(0,0,0,0.62)
+}
+
+#lgbx {
+  background: #FFF;
+  padding: 5px;
+  z-index: 55;
+  top: 0;
+  left: 0;
+  padding:50px 200px; 
+  padding-top: 10px;
+/*  overflow: hidden;*/
+  border-radius: 10px;
+  border: 3px solid #000;
+   -webkit-box-shadow: 0 0 9px 3px #222;
+    -moz-box-shadow: 0 0 9px 3px #222;
+    box-shadow: 0 0 9px 3px #222;
+}
+
+#lgbx_close,
+#lgbx_desc,
+#lgbx_next,
+#lgbx_prev {
+  position: absolute;
+  z-index: 56;
+/*  display: none*/
+}
+#lgbx_closee,
+#lgbx_desc,
+#lgbx_nextt,
+#lgbx_prevv
+{
+    display:none;
+}
+#lgbx_close {
+  z-index: 56;
+  right: -15px;
+  top: -19px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 30px;
+
+}
+
+#lgbx_desc {
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #FFF;
+  padding: 5px 8px 1px;
+  font-size: 12px
+}
+
+#lgbx_next,
+#lgbx_prev {
+  cursor: pointer;
+  top: 12px;
+ right: 0px;
+  max-width: 10px;
+  width: 100%;
+  display: block !important;
+  max-height: 12px;
+}
+
+#lgbx_next { right: 15px }
+
+#lgbx_prev {right:35px }
+@media(min-width:900px) and (max-width:1099px)
+{
+    #lgbx{
+        padding: 0px 100px;
+    }
+    #lgbox_head{
+        margin-left: -90px;
+    }
+
+}
+@media(min-width:768px) and (max-width:899px)
+{
+    #lgbx{
+        padding: 0px 80px;
+    }
+    #lgbox_head{
+        margin-left: -44px;
+    }
+
+}
+@media(min-width:596px) and (max-width:767px)
+{
+    #lgbx{
+        padding: 0px 50px;
+    }
+    #lgbox_head{
+        margin-left: -44px;
+    }
+
+}
+@media(min-width:300px) and (max-width:595px)
+{
+    #lgbx{
+        padding: 0px 20px;
+        padding-bottom: 25px !important;
+    }
+    #lgbox_head{
+        margin-left: -12px;
+    }
+    #small_img{
+        display: none;
+    }
+    #lgbox_head{
+        height: 25px;
+        margin-bottom: 15px;
+    }
+    #lgbox_head h1{
+        font-size: 16px;
+    }
+
+}
+
+/*
+* Read More link on /company/team 
+*/
+.page-node-1 a.view-element.content-toggle {
+  margin-top: 20px;
+}

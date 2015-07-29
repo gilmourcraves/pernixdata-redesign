@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* GLOBAL ELEMENTS */
+body { }
+a {color: #ab2328; }
+a:hover { #ab2328; }
+p { }
+.jvcontainer { }
+.jvheader { }
+.jvcontent { }
+
+/* JOB LISTING */
+.jvlisting { }
+.jvlisting h2 { }
+.jvlisting p { }
+
+/* JOB DESCRIPTION */
+.jvdescription { }
+.jvfacebook { }
+.jvjobheader { }
+.jvbuttons { }
+.jvdescriptionbody { }
+.applybtnbot { }
+.backlink { }
+.btn { }
+.sendjobvite { }
+
+/* APPLY */
+.jvapply { }
+.jvapply .jvjobheader { }
+.required { }
+.control-group { }
+.jvresume { }
+.jvcoverletter { }
+.jvsocial { }
+.sendbtn { }
+
+/* APPLY CONFIRMATION */
+.jvapplyconfirm { }
+.confirmMessage { }
+
+
+/* EMAIL SIGN UP */
+.jvnotify { }
+.jvnotificationcategories { }
+.notifybtn { }
+
+/* EMAIL SIGIN UP CONFIRMATION */
+.jvnotifyconfirm { }
