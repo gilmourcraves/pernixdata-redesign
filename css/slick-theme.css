@@ -1,0 +1,142 @@
+
+/* Slider */
+
+.slick-slide .image{padding:10px;}
+.slick-slide img.slick-loading{border:0 }
+.slick-slider{margin:0 auto;}
+
+.slick-loading .slick-list
+{
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+}
+
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 43px;
+    height: 108px;
+    margin-top: -90px;
+    padding: 0;
+border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.slick-prev
+{
+    left: -90px;
+    background: url(../images/sprite-controls.png) 0 -21px  no-repeat;
+}
+
+.slick-next
+{
+    right: -90px;
+    background: url(../images/sprite-controls.png) -43px  -21px no-repeat;
+}
+
+
+/* Dots */
+/*.slick-slider
+{
+    margin-bottom: 30px;
+}*/
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 35px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 30px 0 0;
+    padding: 0;
+
+    cursor: pointer;
+    background: url(../images/sprite-controls.png) no-repeat -30px 0;
+    overflow: hidden;
+}
+.slick-dots li a
+{
+    display: block;
+    text-indent: -999px;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: arial, sans-serif;
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active
+{
+    background: url(../images/sprite-controls.png) no-repeat -15px 0;
+}
+

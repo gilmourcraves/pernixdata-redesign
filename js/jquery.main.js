@@ -103,6 +103,7 @@ jQuery(function(){
 	});
 
 	// Slideshow
+/*
 	var $Slideshow = jQuery(".slideshow"),
 			navSlide = jQuery('.nav-slides li');
 
@@ -136,6 +137,12 @@ jQuery(function(){
 	jQuery('.prevButton').on('click', function() {
 		jQuery('.slideshow').slickPrev();
 	});
+*/
+
+    jQuery('.slideshow').slick();
+
+
+
 
 	// Hide empty li's. Needed do not remove.
 	jQuery('li').filter(function(){

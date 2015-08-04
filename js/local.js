@@ -6,8 +6,6 @@ jQuery(document).ready(function($){
 
     $(catHeader).html('<h2>Category: <span class="red">' + title + '</span></h2>');
 
-
-
     // Bio Formatting
     //hack to hide bio small of full bio page
     if($('.container-blog-bio').length > 0){
@@ -74,13 +72,6 @@ jQuery(document).ready(function($){
 
     //end bio scripts
 
-
-
-
-
-
-
-
     var win_wid=jQuery(window).width();
     var count = jQuery("#gallery img").length;//count the slide child
     var carousel_wid =jQuery('#carousel_inner').width();
@@ -130,8 +121,6 @@ jQuery(document).ready(function($){
 		next();
 		back();
     }
-
-
 
 
 function next(){
