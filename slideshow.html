@@ -2,7 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Slider Dev</title>
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
@@ -36,30 +37,38 @@
 
     <style>
         .slider-home {
-            height: 375px;
-            width: 1409px;
+            max-height: 375px;
+            max-width: 1409px;
             background-color: #fff;
 
         }
         .slider-home-item {
-            height: 375px;
-            width: 1409px;
+            max-height: 375px;
+            max-width: 1409px;
             background-color: #fff;
         }
 
-        .slider-home-image {
-            float:left;
-            width: 447px;
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
         }
-        .slider-home-item h3 {
-            float:left !important;
+
+        .slider-home-image {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        .slider-home-item span.h3 {
             font: 400 2.0em/1.3em "proxima-nova",Arial,Helvetica,sans-serif !important;
-            width: 900px;
             color: #343741;
-            margin: 100px 0 20px 20px
+            margin: 100px 0 20px 20px;
+            display:block;
         }
         .slider-home-item a.btn-black-xsm {
-            float:left;
             margin: 0 0 0 20px;
             text-decoration: none;
         }
@@ -72,6 +81,7 @@
         }
 
         .container-slideshow-buttons-below .btn {
+            clear:left;
             width: 300px;
             margin-right: 20px;
             display: inline-block;
@@ -79,13 +89,67 @@
             padding: 5px 0;
         }
 
-        .slider-home-customers {
-            clear: both;
+        .slider-home-left {
+            display: block;
+            max-width: 447px;
+            float:left;
         }
-        /*        .slider-home-customers .slick-slide img {
-                    display: block;
-                    margin: 0 auto;
-                }*/
+        .slider-home-right{
+            display: block;
+            max-width: 900px;
+            float:left;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            .container-slideshow {
+                margin-top: 10%;
+                width: 100%;
+                background-color: #FFF;
+                min-height: 1100px;
+            }
+
+            .slider-home {
+                max-height: 800px;
+            }
+
+            .slider-home-item {
+                max-height: 800px;
+            }
+
+            .slider-home-right{
+                margin-bottom: 70px;
+            }
+
+            .slider-home-item a.btn-black-xsm {
+                margin: 0;
+                text-decoration: none;
+            }
+
+            .slider-home-item span.h3 {
+                font: 400 2.0em/1.3em "proxima-nova", Arial, Helvetica, sans-serif !important;
+                color: #343741;
+                margin: 20px 20px 10px 20px;
+                display: block;
+                text-align: center;
+            }
+
+            .slider-home-btn {
+                display:block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .slick-dots {
+
+                bottom: 10px;
+
+            }
+        }
+
+
+
+
 
     </style>
 
@@ -100,19 +164,19 @@
             <!-- Slideshow Slides -->
             <div class="slider-home">
                 <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SOON YOU CAN ARCHITECT<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
+                    <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SOON YOU CAN ARCHITECT<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                 </div>
                 <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SLIDE 2<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
+                    <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SLIDE 2<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                 </div>
                 <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SLIDE 3<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
+                    <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SLIDE 3<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                 </div>
             </div>
         </div>
@@ -123,6 +187,14 @@
         <a href="#" class="btn btn-red">FREE SOFTWARE</a>
     </div>
 </section>
+
+
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
 
 
 
