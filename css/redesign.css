@@ -100,6 +100,7 @@
     margin: 40px auto;
 }
 
+
 .region-03 {
     background: url('../images/bg-region-03.jpg') #fff no-repeat center center;
     min-height: 555px;
@@ -415,6 +416,41 @@ p.large-customers {
 
 @media only screen and (max-width: 960px) {
 
+    #wrapper, .region-01, .region-02, .region-03, .region-04, .region-05  {
+        width: 310px;
+    }
+
+
+    #logo-pernixdata {
+        width: 100px;
+    }
+
+    .logo {
+        top: 45px;
+        left: 20px;
+    }
+
+    #nav .mnavlist {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    .trial {
+        margin: 0px 0px 0px 15px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 21px;
+        width: 100px;
+        position: absolute;
+        top: -30px;
+        right: 30px;
+    }
+
+    #main {
+        width: 100%;
+    }
+
     .banner .holder {
         overflow: hidden;
         margin: 0px auto;
@@ -424,28 +460,85 @@ p.large-customers {
     }
 
     .container-section-home {
+        border-top: 1px solid #ddd;
         margin: 0 auto;
+        padding: 20px 0;
+        width: 90%;
+    }
+
+    .container-section-home h2  {
+        font: 600 2.2em/1em "proxima-nova",Arial,Helvetica,sans-serif !important;
+        color: #000;
+        text-align: center;
         width: 100%;
+        margin: 20px 0 20px  !important;
+
+    }
+
+    .container-section-home p  {
+        font-size: 20px !important;
+        line-height: 28px;
+        color: #000;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    p.large {
+        font: 500 1.7em/1.2em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    }
+
+    p.medium {
+        font: 500 1.5em/1.2em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    }
+
+    .container-btn-center {
+        padding-top: 40px;
+    }
+
+
+    .container-section-home p {
+        font-size: 20px !important;
+        line-height: 28px;
+        text-align:left;
     }
 
     /*layout 50 */
     .container-section-home .col-50 {
-        max-width: 320px;
-        margin: 0 20px 20px 0;
+        margin: 0 0 20px 0;
         background: #fff;
         float: left;
         padding: 20px;
         text-align: center;
+        width: 92%;
+    }
+
+    .bg-orange {
+        background-color: #FF9A41 !important;
+        color: #FFF !important;
+        min-height: 80px;
     }
 
     #header {
-        padding: 50px 0 0;
+        padding: 10px 0 0;
         margin: 0 auto;
+        height: 80px;
         width: 100%; /*1109px;*/
     }
 
     .add-nav {
         display: none;
+    }
+
+    a.trial.orange {
+
+        left: 30px;
+    }
+
+    .box {
+        float: none;
+        width: 295px;
+        height: 30px;
+        margin: 0 10px;
     }
 
     .search-desktop {
@@ -454,12 +547,27 @@ p.large-customers {
 
     .search-mobile {
         display:block;
+        margin: 5px 20px !important;
+        float: right;
+    }
+
+    #nav .region-mobile-header a#mnav {
+        top: -26px;
+        right: 0;
+        left: 200px;
     }
 
     #wrapper-nav {
         position:absolute;
-        left: 300px;
-        top: 20px;
+        left: 0;
+        top: 40px;
+        width: 320px;
+    }
+
+    .container-section-home .col-30 {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+        width: 100%;
     }
 
     .region-01 {
@@ -470,7 +578,7 @@ p.large-customers {
 
     .region-02 {
         background: none;
-        min-height: auto
+        min-height: auto;
     }
 
     .region-02 .holder {
@@ -502,6 +610,154 @@ p.large-customers {
         min-height: auto
         color: #fff;
     }
+}
+
+
+.slider-home {
+    max-height: 375px;
+    max-width: 1409px;
+    background-color: #fff;
+
+}
+.slider-home-item {
+    max-height: 375px;
+    max-width: 1409px;
+    background-color: #fff;
+}
+
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.slider-home-image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.slider-home-item span.h3 {
+    font: 400 2.0em/1.3em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    color: #343741;
+    margin: 100px 0 20px 20px;
+    display:block;
+}
+.slider-home-item a.btn-black-xsm {
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
+
+.container-slideshow-buttons-below {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container-slideshow-buttons-below .btn {
+    clear:left;
+    width: 300px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.slider-home-left {
+    display: block;
+    max-width: 447px;
+    float:left;
+}
+.slider-home-right{
+    display: block;
+    max-width: 900px;
+    float:left;
+}
+
+@media only screen and (max-width: 601px) {
+
+    .slider-home {
+        max-height: 375px;
+        max-width: 400px;
+        background-color: #fff;
+
+    }
+    .slider-home-item {
+        max-height: 375px;
+        max-width: 400px;
+        background-color: #fff;
+    }
+
+    .container-slideshow {
+        margin-top: 10%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .slider-home {
+        max-height: 800px;
+    }
+
+    .slider-home-item {
+        max-height: 800px;
+    }
+
+    .slider-home-right{
+        margin-bottom: 70px;
+    }
+
+    .slider-home-left {
+        display: block;
+        max-width: 320px;
+        float:left;
+    }
+    .slider-home-right{
+        display: block;
+        max-width: 320px;
+        float:left;
+    }
+
+    .slider-home-item a.btn-black-xsm {
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .slider-home-item span.h3 {
+        font: 400 2.0em/1.3em "proxima-nova", Arial, Helvetica, sans-serif !important;
+        color: #343741;
+        margin: 20px 20px 10px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .slider-home-btn {
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slick-dots {
+        bottom: 10px;
+        padding: 0 15px;
+    }
+
+    .container-slideshow-buttons-below .btn {
+        margin: 10px 15px;
+
+    }
+    .region-01 {
+        height: auto;
+        min-height: 800px;
+    }
+
+    .slider-home-customers {
+        width: 200px;
+        margin: 0 auto;
+    }
+
 }
 
 

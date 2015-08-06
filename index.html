@@ -1,9 +1,8 @@
 <!doctype html>
 <html><head>
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6WMG6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','lsfDataLayer','GTM-M6WMG6');</script>
-    <!-- End Google Tag Manager -->
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="http://www.pernixdata.com/sites/default/files/fav-icon.png" type="image/png" />
     <meta name="generator" content="Drupal 7 (http://drupal.org)" />
     <link rel="shortlink" href="http://www.pernixdata.com/" />
@@ -99,7 +98,17 @@
                         dots: false,
                         slidesToShow: 4,
                         slidesToScroll: 4,
-                        mobileFirst: true
+                        mobileFirst: true,
+                        responsive: [
+                            {
+                                breakpoint: 601,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                    arrows: true
+                                }
+                            }
+                        ]
 
                     }
             );
@@ -111,60 +120,6 @@
     </script>
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <style>
-        .slider-home {
-            height: 375px;
-            width: 1409px;
-            background-color: #fff;
-
-        }
-        .slider-home-item {
-            height: 375px;
-            width: 1409px;
-            background-color: #fff;
-        }
-
-        .slider-home-image {
-            float:left;
-            width: 447px;
-        }
-        .slider-home-item h3 {
-            float:left !important;
-            font: 400 2.0em/1.3em "proxima-nova",Arial,Helvetica,sans-serif !important;
-            width: 900px;
-            color: #343741;
-            margin: 100px 0 20px 20px
-        }
-        .slider-home-item a.btn-black-xsm {
-            float:left;
-            margin: 0 0 0 20px;
-            text-decoration: none;
-        }
-
-        .container-slideshow-buttons-below {
-            width: 100%;
-            height: 50px;
-            text-align: center;
-            margin-top: 35px;
-        }
-
-        .container-slideshow-buttons-below .btn {
-            width: 300px;
-            margin-right: 20px;
-            display: inline-block;
-            font-size: 16px;
-            padding: 5px 0;
-        }
-
-        .slider-home-customers {
-            clear: both;
-        }
-/*        .slider-home-customers .slick-slide img {
-            display: block;
-            margin: 0 auto;
-        }*/
-
-    </style>
 
     <!-- include typekit library -->
     <script type="text/javascript" src="//use.typekit.net/doe3egm.js"></script>
@@ -240,11 +195,13 @@
     </div>
 </div>
 
-
-
-
 <!-- Main Navigation of the page -->
     <div id="wrapper-nav">
+        <div class="box">
+            <a href="#" class="search search-mobile">search</a>
+            <a href="/free-downloads" class="trial red">Free Software</a>
+            <a href="/live-demos" class="trial orange">Live Demos</a>
+        </div>
         <nav id="nav">
             <div class="region region-header">
                 <ul class="menu">
@@ -412,11 +369,6 @@
                         </ul>
                     </div></div>
             </div>
-            <div class="box">
-                <a href="#" class="search search-mobile">search</a>
-                <a href="/free-downloads" class="trial red">Free Software</a>
-                <a href="/live-demos" class="trial orange">Live Demos</a>
-            </div>
         </nav>
     </div>
 </header>
@@ -441,35 +393,35 @@
 
 <!-- banner of the page -->
 
-<section class="banner region-01">
-    <div class="container-slideshow">
-        <div class="holder-wide">
-            <!-- Slideshow Slides -->
-            <div class="slider-home">
-                <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SOON YOU CAN ARCHITECT<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
-                </div>
-                <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SLIDE 2<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
-                </div>
-                <div class="slider-home-item">
-                    <img src="images/guy-at-computer.jpg" class="slider-home-image" />
-                    <h3>SLIDE 3<br /> THE DATACENTER OF YOUR DREAMS</h3>
-                    <a href="#" class="btn-black-xsm">LEARN MORE</a>
+    <section class="banner region-01">
+        <div class="container-slideshow">
+            <div class="holder-wide">
+                <!-- Slideshow Slides -->
+                <div class="slider-home">
+                    <div class="slider-home-item">
+                        <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SOON YOU CAN ARCHITECT<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
+                    </div>
+                    <div class="slider-home-item">
+                        <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SLIDE 2<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
+                    </div>
+                    <div class="slider-home-item">
+                        <span class="slider-home-left"><img src="images/guy-at-computer.jpg" class="slider-home-image" /></span>
+                    <span class="slider-home-right"><span class="h3">SLIDE 3<br /> THE DATACENTER OF YOUR DREAMS</span><br />
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-slideshow-buttons-below">
-        <a href="#" class="btn btn-orange">LIVE DEMOS</a>
-        <a href="#" class="btn btn-red">FREE SOFTWARE</a>
-    </div>
-</section>
+        <div class="container-slideshow-buttons-below">
+            <a href="#" class="btn btn-orange">LIVE DEMOS</a>
+            <a href="#" class="btn btn-red">FREE SOFTWARE</a>
+        </div>
+    </section>
 
 
 <!-- page-heading of the page -->
@@ -605,7 +557,7 @@
                     <div class="slider-home-customers-item">
                         <img src="images/logo-hansen.png" />
                     </div>
-                    <div class="slider-home-customers-item">
+                  <div class="slider-home-customers-item">
                         <img src="images/logo-zetta.png" />
                     </div>
                     <div class="slider-home-customers-item">
@@ -702,7 +654,7 @@
         </div>
     </section>
 
-    <section class="banner region-07">
+    <section class="banner region-07" style="display: none">
         <div class="holder">
             <div class="container-section-home">
 
@@ -725,7 +677,7 @@
 
 <!-- footer of the page -->
 <!-- footer split here -->
-<div class="region region-footer">
+<div class="region region-footer" style="display: none">
     <footer id="footer">
         <div class="footer-holder">
             <div class="footer-frame">
