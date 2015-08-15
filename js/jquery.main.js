@@ -8,7 +8,7 @@ jQuery(function(){
 	jQuery('input, textarea').placeholder();
 
 	// Site search func.
-	jQuery('header .search').click(function (e) {
+	jQuery('.search').click(function (e) {
 		e.preventDefault();
 		jQuery('#block-search-form').slideToggle(function () {
             if (jQuery('#edit-search-block-form--2').is(':visible')) {
