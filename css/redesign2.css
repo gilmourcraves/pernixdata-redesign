@@ -19,18 +19,25 @@
     padding: 0;
     margin: 0;
     width: 100%; /*1109px;*/
-    background: url(../images/bg-header.png);
+    background: url(../images/bg-header120.png);
 }
 
 #container-header {
     padding: 0;
     margin: 0 auto;
     width: 1109px;
-    height: 140px;
+    height: 120px;
+}
+
+#header {
+    position:fixed;
+    top: 0;
+    height: 120px;
+    z-index: 201;
 }
 
 .header-utilities {
-    margin: 28px 0 0 0;
+    margin: 24px 0 0 0;
     width: 470px;
     float: right;
 }
@@ -52,6 +59,64 @@
     margin: 0 0 0 20px;
 }
 
+/*floating utilities right*/
+
+#right-utility {
+    position:fixed;
+    width: 35px;
+    height: 107px;
+    top: 300px;
+    right: 0;
+    z-index: 200;
+}
+
+#right-utility-nav {
+    position:fixed;
+    width: 60px;
+    height: 182px;
+    top: 300px;
+    right: 120px;
+    z-index: 200;
+}
+
+#right-utility-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#right-utility-nav ul li {
+
+    margin: 10px;
+    padding: 0;
+}
+
+.circle-base {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #666;
+    cursor:pointer;
+}
+
+.circle:hover {
+    background: #ab2328;
+}
+
+.circle-on {
+    width: 10px;
+    height: 10px;
+    background: #ab2328;
+}
+
+/*end floating utilities right*/
+
 .trial {
     text-align: center;
     text-transform: uppercase;
@@ -70,6 +135,10 @@
 }
 
 .dark-blue {
+    background-color: #43456c;
+}
+
+.dark-blue:hover {
     background-color: #3a3c68;
 }
 
@@ -83,23 +152,23 @@
 }
 
 #container-header-top {
-    height: 70px;
+    height: 60px;
 }
 
 .logo {
     float: left;
-    margin:  20px 0 0 0;
+    margin:  16px 0 0 0;
 }
 
 .buttons-nav-top {
     float: right;
-    margin-top: 24px;
+    margin-top: 18px;
 }
 
 
 
 #nav ul {
-    padding: 18px 0 0;
+    padding: 11px 0 0;
 }
 
 #nav > .region > ul.menu > li > a {
@@ -107,12 +176,12 @@
 }
 
 #nav ul li a {
-    padding: 12px 44px 19px 0;
+    padding: 12px 44px 16px 0;
     color: #fff;
 }
 
 #nav ul li ul {
-   top: 53px;
+   top: 49px;
 }
 
 
@@ -134,6 +203,23 @@
     padding-right: 0;
 }
 
+
+.banner {
+/*    margin: 40px 0;
+    border-top: 1px solid #f4f4f4;*/
+}
+
+.customer-text {
+    font: 400 0.85em/1.2em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    text-align: center;
+    display:block;
+    width: 100%;
+}
+
+.slider-home-customers-item img {
+    margin: 0 auto;
+}
+
 .region-01 {
 /*    background: url('../images/bg-region-01.jpg') no-repeat center center;
     -webkit-background-size: cover;
@@ -142,16 +228,22 @@
     background-size: cover;*/
     height: 750px;
     background: transparent;
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: 120px;
+
 /*    height: 1200px;*/
 
 }
 
 .region-02 {
-    background: url('../images/bg-region-02.jpg') #fff no-repeat center center;
-/*    -webkit-background-size: cover;
+    background: url('../images/bg-region-02a.jpg') #fff no-repeat center center;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
+    margin: 40px 0 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
     min-height: 615px;
 }
 
@@ -162,22 +254,38 @@
 
 .region-03 {
     background: url('../images/bg-region-03.jpg') #fff no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     min-height: 555px;
+    margin: 40px 0 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .region-04 {
     background: #fff;
-    min-height: 645px;
+    min-height: 565px;
+    margin: 40px 0 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .region-05 {
     background: #f4f4f4;
     min-height: 535px;
+    margin: 40px 0 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .region-06 {
     background: #fff;
     min-height: 615px;
+    margin: 40px 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .region-07 {
@@ -345,6 +453,23 @@ div.col-news-header {
     text-decoration:none;
     background:#fea455;
 }
+
+.btn-dark-blue{
+    position: relative;
+    text-align:center;
+    text-transform:uppercase;
+    padding: 10px 30px;
+    letter-spacing:1px;
+    font:14px/31px "proxima-nova", Arial, Helvetica, sans-serif;
+    color:#fff;
+    border-radius: 2px;
+    background-color: #3a3c68;
+}
+.btn-dark-blue:hover{
+    text-decoration:none;
+    background-color: #3a3c68;
+}
+
 
 
 
@@ -527,12 +652,13 @@ p.large-customers {
         width: 100%;
     }
 
+
     .banner .holder {
         overflow: hidden;
-        margin: 0px auto;
+        margin: 0 auto;
         width: 100%;
         position: relative;
-        padding: 0px;
+        padding: 0;
     }
 
     .container-section-home {
@@ -692,7 +818,7 @@ p.large-customers {
 .slider-home {
 /*    max-height: 775px;
     width: 1709px;*/
-    background-color: #fff;
+    background-color: transparent;
 
 }
 .slider-home-item {
@@ -702,42 +828,55 @@ p.large-customers {
 }
 
 .slider-home-item span.h1{
-    font: 600 2.6em/1em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    font: 700 3em/1.15em "proxima-nova",Arial,Helvetica,sans-serif !important;
     color: #343741;
     text-align: center;
+    height: 160px;
 }
 
 .slider-home-center {
     width: 100%;
-    margin-top: 18.5%;
     display:block;
+    height: 160px;
+    margin-top: 160px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    color: #000;
 }
 
 .slider-home-item-01 {
-    background: url('../images/bg-pernix.jpg') #fff no-repeat center center;
-    min-height: auto;
+/*    background: url('../images/bg-pernix.jpg') #fff no-repeat center center;*/
     color: #fff;
+    min-height: 400px;
+    background: transparent;
+
 }
 
 .slider-home-item-02 {
     background: url('../images/bg-pernix2.jpg') #fff no-repeat center center;
-    min-height: auto;
     color: #fff;
 }
 
 .slider-home-item-03 {
     background: url('../images/bg-pernix3.jpg') #fff no-repeat center center;
-    min-height: auto;
     color: #fff;
 }
 
 .slick-prev {
-    left: 90px !important;
+    left: 90px;
 
 }
 
 .slick-next {
-    right: 90px !important;
+    right: 90px;
+}
+
+.slider-home-btn {
+    display:block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -772,30 +911,12 @@ p.large-customers {
 
 
 
-.slick-prev {
-
-}
-.slick-next {
-    right: 0;
-    background: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .container-slideshow-buttons-below {
     width: 100%;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    margin-top: 35px;
+    position: absolute;
+    bottom: 60px;
 }
 
 .container-slideshow-buttons-below .btn {

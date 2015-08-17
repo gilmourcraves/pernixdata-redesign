@@ -69,6 +69,7 @@
     <script type="text/javascript" src="http://www.pernixdata.com/sites/all/themes/pernixdata/js/mlightbox.js?npdpm8"></script>
     <script type="text/javascript" src="http://www.pernixdata.com/sites/all/themes/pernixdata/js/local.js?npdpm8"></script>
     <script type="text/javascript" src="js/jquery.main.js"></script>
+    <script type="text/javascript" src="js/jquery.visible.min.js"></script>
     <script type="text/javascript" src="js/redesign2.js"></script>
     <script type="text/javascript">
         <!--//--><![CDATA[//><!--
@@ -359,33 +360,46 @@
     </form>
 </div>
 
+    <div id="right-utility">
+        <img src="images/right-utility.png" />
+    </div>
+
+    <div id="right-utility-nav">
+        <ul>
+            <li><div class="circle-base circle circle-on" data-target=".region-01" data-id="region-01"></div></li>
+            <li><div class="circle-base circle" data-target=".region-02" data-id="region-02"></div></li>
+            <li><div class="circle-base circle" data-target=".region-03" data-id="region-03"></div></li>
+            <li><div class="circle-base circle" data-target=".region-05" data-id="region-05"></div></li>
+            <li><div class="circle-base circle" data-target=".region-07" data-id="region-07"></div></li>
+        </ul>
+    </div>
+
+
+
 <!-- banner of the page -->
 
-    <section class="banner region-01" >
- <!--       <div class="container-slideshow">
-            <div class="holder-wide">-->
+    <section class="banner region-01 region-parallax" data-circleid="region-01">
                 <!-- Slideshow Slides -->
                 <div class="slider-home">
-                    <div class="slider-home-item slider-home-item-01">
+                    <div class="slider-home-item slider-home-item-01" data-parallax="scroll" data-image-src="images/bg-pernix.jpg" data-speed="0.3">
                     <span class="slider-home-center"><span class="h1">SOON YOU CAN ARCHITECT<br /> THE DATACENTER<br /> OF YOUR DREAMS</span><br />
-                    <!--<span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span>--></span>
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                     </div>
                     <div class="slider-home-item slider-home-item-02">
                     <span class="slider-home-center"><span class="h1">SOON YOU CAN ARCHITECT<br /> THE DATACENTER<br /> OF YOUR DREAMS</span><br />
-                    <!--<span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span>--></span>
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                     </div>
                     <div class="slider-home-item slider-home-item-03">
                      <span class="slider-home-center"><span class="h1">SOON YOU CAN ARCHITECT<br /> THE DATACENTER<br /> OF YOUR DREAMS</span><br />
-                    <!--<span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span>--></span>
+                    <span class="slider-home-btn"><a href="#" class="btn-black-xsm">LEARN MORE</a></span></span>
                     </div>
-  <!--              </div>
-            </div>-->
-        </div>
 
-<!--        <div class="container-slideshow-buttons-below">
-            <a href="#" class="btn btn-orange">LIVE DEMOS</a>
+                </div>
+
+        <div class="container-slideshow-buttons-below">
+            <a href="#" class="btn btn-dark-blue">LIVE DEMOS</a>
             <a href="#" class="btn btn-red">FREE SOFTWARE</a>
-        </div>-->
+            </div>
     </section>
 
 
@@ -395,7 +409,7 @@
 <!-- contain main informative part of the site -->
 <div id="main" >
 
-    <section class="banner region-02">
+    <section class="banner region-02 region-parallax" data-circleid="region-02">
         <div class="holder">
 
             <div class="container-section-home">
@@ -414,7 +428,7 @@
         </div>
     </section>
 
-    <section class="banner region-03">
+    <section class="banner region-03 region-parallax" data-circleid="region-03">
         <div class="holder">
 
             <div class="container-section-home">
@@ -438,52 +452,13 @@
 
     </section>
 
-    <section class="banner region-04">
+    <section class="banner region-04" >
         <div class="holder">
             <div class="container-section-home">
             <h2>BENEFITS</h2>
 
-                <div class="col-50 bg-dark-blue">
+<img src="images/fpo-benefits.png" />
 
-                    <h3>Best VM and Storage Performance</h3>
-                    <p>&middot; 10x lower VM latency</p>
-                    <p>&middot; Reduced SAN utilization by over 80%</p>
-
-
-                </div>
-
-                <div class="col-50 col-50-last bg-dark-blue">
-
-                    <h3>Scale-out Growth</h3>
-                    <p>Predictably grow IOPS by adding compute resources</p>
-
-
-                </div>
-
-<!--                <div class="col-50 col-50-center bg-dark-blue">
-
-                    <h3>Decouple storage performance from capacity</h3>
-                    <p>Build the ideal data center using best-of-breed servers and storage</p>
-
-
-                </div>-->
-
-                <div class="col-50 bg-dark-blue">
-
-                    <h3>Unsurpassed Visiblity and Control</h3>
-                    <p>Efficiciently design and manage your entire data center</p>
-
-
-                </div>
-
-                <div class="col-50 col-50-last bg-dark-blue">
-
-                    <h3>95% Lower Data Center Costs</h3>
-                    <p>&middot; Avoid unnecessary hardware purchases</p>
-                    <p>&middot; Streamline operations</p>
-
-
-                </div>
             </div>
 
         </div>
@@ -492,7 +467,7 @@
 
 
 
-    <section class="banner region-05">
+    <section class="banner region-05 region-parallax" data-circleid="region-05">
         <div class="holder">
             <div class="container-section-home">
 
@@ -504,27 +479,75 @@
                 <div class="slider-home-customers">
                     <div class="slider-home-customers-item">
                         <img src="images/logo-hansen.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                   <div class="slider-home-customers-item">
                         <img src="images/logo-zetta.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-advania.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-charlotte.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-hansen.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-zetta.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-advania.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                     <div class="slider-home-customers-item">
                         <img src="images/logo-charlotte.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
+                    </div>
+                    <div class="slider-home-customers-item">
+                        <img src="images/logo-hansen.png" />
+                        <span class="customer-text">
+                            $1M in cost savings<br />
+                            10x faster SQL Server<br />
+                            12x lower SAP latency<br />
+                        </span>
                     </div>
                 </div>
 
@@ -602,7 +625,7 @@
         </div>s
     </section>
 
-    <section class="banner region-07">
+    <section class="banner region-07 region-parallax" data-circleid="region-07">
         <div class="holder">
             <div class="container-section-home">
 
@@ -622,7 +645,9 @@
 </div>
 
 
-<!-- footer of the page -->
+
+
+    <!-- footer of the page -->
 <!-- footer split here -->
 <div class="region region-footer">
     <footer id="footer">
