@@ -299,9 +299,33 @@
 }
 
 .container-slideshow {
-
+    position:absolute;
     width: 100%;
-/*    background: rgba(255, 255, 255, 0.9);*/
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.slideshow {
+    height: 375px;
+    overflow: hidden;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 43px;
+    height: 108px;
+    margin-top: -65px !important;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-mobile {
+    display:none;
 }
 
 .section-news {
@@ -818,26 +842,15 @@ p.large-customers {
     }
 }
 
-
 .slider-home {
-/*    max-height: 775px;
-    width: 1709px;*/
-    background-color: transparent;
-    width: 100vw;
-    height: 100vh;
+    max-height: 375px;
+    max-width: 1409px;
+    background-color: transparent !important;
 
 }
 .slider-home-item {
-/*    max-height: 575px;
-    width: 1709px;*/
-    text-align: center;
-}
-
-.slider-home-item span.h1{
-    font: 700 3em/1.15em "proxima-nova",Arial,Helvetica,sans-serif !important;
-    color: #343741;
-    text-align: center;
-    height: 160px;
+    max-height: 375px;
+    max-width: 1409px;
 }
 
 .slider-home-center {
@@ -851,38 +864,56 @@ p.large-customers {
     color: #000;
 }
 
-.slider-home-item-01 {
-/*    background: url('../images/bg-pernix.jpg') #fff no-repeat center center;*/
-    color: #fff;
-    min-height: 400px;
-    background: transparent;
 
-}
-
-.slider-home-item-02 {
-    background: url('../images/bg-pernix2.jpg') #fff no-repeat center center;
-    color: #fff;
-}
-
-.slider-home-item-03 {
-    background: url('../images/bg-pernix3.jpg') #fff no-repeat center center;
-    color: #fff;
-}
-
-.slick-prev {
-    left: 90px;
-
-}
-
-.slick-next {
-    right: 90px;
-}
-
-.slider-home-btn {
-    display:block;
+.img-responsive {
+    display: block;
+    max-width: 100%;
     width: 100%;
+    height: auto;
+}
+
+.slider-home-image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.slider-home-item span.h3 {
+    font: 400 2.0em/1.3em "proxima-nova",Arial,Helvetica,sans-serif !important;
+    color: #343741;
+    margin: 100px 0 20px 20px;
+    display:block;
+}
+.slider-home-item a.btn-black-xsm {
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
+
+.container-slideshow-buttons-below {
+    width: 100%;
+    height: 50px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
+}
+
+.container-slideshow-buttons-below .btn {
+    clear:left;
+    width: 300px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.slider-home-left {
+    display: block;
+    max-width: 447px;
+    float:left;
+}
+.slider-home-right{
+    display: block;
+    max-width: 900px;
+    float:left;
 }
 
 
