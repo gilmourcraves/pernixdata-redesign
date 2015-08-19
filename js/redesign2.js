@@ -23,11 +23,12 @@ jQuery(document).ready(function($){
 
 
     $('.slider-home').slick({
-            autoplay: false,
+            autoplay: true,
             arrows: true,
             dots: false,
             mobileFirst: true,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            pauseOnHover: false
         }
     );
 
@@ -43,8 +44,8 @@ jQuery(document).ready(function($){
         $('.region-01').css('height', (windowHeight - 120) + 'px');
         $('.slider-home, .slider-home-item').css('height', (windowHeight - 120) + 'px').css('width', (windowWidth) + 'px');
         $('.slider-home-center').css('margin-top', centerH1 + 'px');
-        $('#right-utility').css('top', centerH1 + 140 + 'px');
-        $('#right-utility-nav').css('top', centerH1 + 143 + 'px').css('right', gotoNav + 'px');
+        /*$('#right-utility').css('top', centerH1 - 140 + 'px');*/
+        $('#right-utility-nav').css('top', centerH1 + 130 + 'px');
         $('.slick-prev').css('left', arrowsLR + 'px');
         $('.slick-next').css('right', arrowsLR + 'px');
     }

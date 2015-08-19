@@ -26,7 +26,8 @@ jQuery(document).ready(function($){
             arrows: false,
             dots: false,
             mobileFirst: true,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            pauseOnHover: false
         }
     );
 
@@ -43,6 +44,7 @@ jQuery(document).ready(function($){
         $('#right-utility-nav').css('top', centerVertical + 143 + 'px').css('right','5%');
         $('.slick-prev').css('left', arrowsLR + 'px');
         $('.slick-next').css('right', arrowsLR + 'px');
+        $('.container-slideshow-buttons-below').css('top', centerVertical + 436 + 'px');
     }
 
     $('.circle').click(function(){

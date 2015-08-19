@@ -69,9 +69,9 @@
     position:fixed;
     width: 35px;
     height: 107px;
-    top: 300px;
     right: 0;
     z-index: 200;
+    bottom: 62px;
 }
 
 #right-utility-nav {
@@ -79,7 +79,7 @@
     width: 60px;
     height: 182px;
     top: 300px;
-    right: 120px;
+    right: 0;
     z-index: 200;
 }
 
@@ -91,7 +91,7 @@
 
 #right-utility-nav ul li {
 
-    margin: 10px;
+    margin: 14px;
     padding: 0;
 }
 
@@ -144,6 +144,14 @@
 
 .dark-blue:hover {
     background-color: #3a3c68;
+}
+
+.dark-blue2 {
+    background-color: #525483;
+}
+
+.dark-blue2:hover {
+    background-color: #616391;
 }
 
 #logo-pernixdata {
@@ -494,17 +502,6 @@ div.col-news-header {
 }
 
 
-.btn-black-sm{
-    position: relative;
-    text-align:center;
-    text-transform:uppercase;
-    padding: 7px 30px;
-    letter-spacing:1px;
-    font:12px/30px "proxima-nova", Arial, Helvetica, sans-serif;
-    color:#fff;
-    border-radius: 2px;
-    background-color: #000;
-}
 .btn-black-sm:hover{
     text-decoration:none;
     background:#333;
@@ -514,9 +511,9 @@ div.col-news-header {
     position: relative;
     text-align:center;
     text-transform:uppercase;
-    padding: 3px 25px;
+    padding: 10px 25px;
     letter-spacing:1px;
-    font:11px/20px "proxima-nova", Arial, Helvetica, sans-serif;
+    font:13px/23px "proxima-nova", Arial, Helvetica, sans-serif;
     color:#fff;
     border-radius: 2px;
     background-color: #000;
@@ -882,7 +879,7 @@ p.large-customers {
     display:block;
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 
