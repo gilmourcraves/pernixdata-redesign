@@ -240,7 +240,7 @@
     background-size: cover;*/
     height: 750px;
     background: transparent;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #dedede;
     margin-top: 120px;
 
 /*    height: 1200px;*/
@@ -254,8 +254,8 @@
     -o-background-size: cover;
     background-size: cover;
     margin: 40px 0 0;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
     min-height: 615px;
 }
 
@@ -265,39 +265,40 @@
 
 
 .region-03 {
-    background: url('../images/bg-region-03.jpg') #fff no-repeat center center;
+/*    background: url('../images/bg-region-03.jpg') #fff no-repeat center center;*/
+    background: #f4f4f4;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 555px;
     margin: 40px 0 0;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
 }
 
 .region-04 {
     background: #fff;
     min-height: 565px;
     margin: 40px 0 0;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
 }
 
 .region-05 {
     background: #f4f4f4;
     min-height: 535px;
     margin: 40px 0 0;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
 }
 
 .region-06 {
     background: #fff;
     min-height: 615px;
     margin: 40px 0;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
 }
 
 .region-07 {
@@ -357,7 +358,7 @@
     font-size: 20px !important;
     line-height: 28px;
     color: #000;
-    text-align: justify;
+/*    text-align: justify;*/
     margin: 0 auto;
 }
 
@@ -698,7 +699,7 @@ p.large-customers {
     }
 
     .container-section-home {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #dedede;
         margin: 0 auto;
         padding: 20px 0;
         width: 90%;
@@ -803,7 +804,7 @@ p.large-customers {
     }
 
     .container-section-home .col-30 {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #dedede;
         padding: 20px 0;
         width: 100%;
     }
