@@ -190,7 +190,7 @@
 }
 
 .trial {
-    margin: 0 0 0 20px !important;
+    margin: 0 0 0 20px ; /*!important*/
 }
 
 #header .top .add-nav li {
@@ -221,17 +221,19 @@
 }
 
 .region-01 {
-/*    background: url('../images/bg-region-01.jpg') no-repeat center center;
+    background: url('../images/bg-region-01.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
-    height: 750px;
+    background-size: cover;
+/*    height: 750px;*/
     background: transparent;
     border-bottom: 1px solid #dedede;
     margin-top: 120px;
 
 /*    height: 1200px;*/
+
+    display: none;
 
 }
 
@@ -398,7 +400,7 @@ p.medium {
 
 .container-section-home {
     margin: 0 auto;
-    width: 940px;
+  /*  width: 940px;*/
 }
 
 /*layout 50 */
@@ -630,8 +632,8 @@ p.large-customers {
     /*    max-height: 775px;
         width: 1709px;*/
     background-color: transparent;
-    width: 100vw;
-    height: 100vh;
+/*    width: 100vw;
+    height: 100vh;*/
 
 }
 .slider-home-item {
@@ -663,6 +665,7 @@ p.large-customers {
     color: #fff;
     min-height: 400px;
     background: transparent;
+    overflow: hidden;
 
 }
 
@@ -749,6 +752,13 @@ p.large-customers {
     float:left;
 }
 
+.slider-home-item {
+    display: none;
+    float: left;
+    height: 100vh;
+    min-height: 1px;
+}
+
 @media screen and (max-width: 1200px) {
 
 
@@ -756,21 +766,34 @@ p.large-customers {
 
 @media screen and (max-width: 1024px) {
 
+    .slider-home-item {
+        display: none;
+        float: left;
+        height: 100vh !important;
+        min-height: 1px;
+    }
 
-}
 
-@media screen and (max-width: 880px) {
+    .container-section-home {
+        margin: 0 auto;
+        width: 100%;
+    }
 
 
-}
-
-@media screen and (max-width: 566px) {
+    .container-section-home h2 {
+        font: 600 2em/1em "proxima-nova",Arial,Helvetica,sans-serif !important;
+        color: #000;
+        text-align: center;
+        width: 100%;
+        margin: 40px 0 40px !important;
+    }
 
     #container-header {
         padding: 0;
         margin: 0 auto;
-        width: 300px;
+        width: 800px;
         position:relative;
+        height: 110px;
     }
 
     #header {
@@ -778,7 +801,201 @@ p.large-customers {
         width: 100%;
         background: none;
         background-color: #fff;
+        height: 110px;
+        position:relative;
     }
+
+    #block-search-form {
+        margin-top: 0;
+    }
+
+
+    #container-header-top {
+        height: 110px;
+    }
+
+    #logo-pernixdata, .logo a img {
+        width: 150px;
+
+    }
+
+    .logo {
+        float:left;
+        width: 150px;
+        margin: 50px 0 0 0;
+    }
+
+    #nav ul li a {
+        padding: 12px 44px 16px 0;
+        color: #666;
+    }
+
+    #nav .mnavlist ul li ul {
+        display: none;
+        position: relative;
+        top: 0;
+        padding: 10px 30px;
+        background: #fff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #nav .region-mobile-header a#mnav {
+        right: 330px;
+        top: -55px;
+    }
+
+    .header-utilities {
+        margin: 24px 0 0 0;
+        width: auto;
+        float:none;
+        display:none;
+    }
+
+    #nav .box, .buttons-nav-top {
+        position: absolute;
+        top: -80px;
+        right: 0;
+
+    }
+
+    .search-mobile {
+        display: block;
+        position: absolute;
+    /*    top: 53px;*/
+        right: 260px;
+    }
+
+
+    .trial {
+
+        text-align: center;
+        text-transform: uppercase;
+        height: 30px;
+        letter-spacing: 1px;
+        font: 12px/31px "proxima-nova",Arial,Helvetica,sans-serif;
+        color: #fff;
+        border-radius: 2px !important;
+        border: 0 !important;
+        cursor: pointer !important;
+        padding: 0 10px !important;
+        margin: 0 0 0 15px;
+        width: auto;
+        position: relative;
+        float:left;
+        top: 0;
+        left: 0;
+    }
+
+    #footer .holder {
+        width: 100%;
+        margin: 40px auto 40px;
+        border: 1px solid #EBEBEB;
+        overflow: hidden;
+        padding: 18px 20px 6px;
+    }
+
+
+    p.large-customers {
+        height: 150px;
+    }
+
+    .region-01 {
+        margin-top: 0;
+    }
+
+    .slider-home-item span.h1 {
+        font: 700 2em/1.15em "proxima-nova",Arial,Helvetica,sans-serif !important;
+        color: #343741;
+        text-align: center;
+        height: 160px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+
+    #container-header {
+        padding: 0;
+        margin: 0 auto;
+        width: 550px;
+        position:relative;
+        height: 60px;
+    }
+
+    #header {
+        padding: 0;
+        width: 100%;
+        background: none;
+        background-color: #fff;
+        height: 60px;
+        position:relative;
+    }
+
+    #block-search-form {
+        margin-top: 0;
+    }
+
+
+    #container-header-top {
+        height: 60px;
+    }
+
+    #logo-pernixdata, .logo a img {
+        width: 150px;
+
+    }
+
+    .logo {
+        top: 3px;
+        left: 10px;
+        width: 150px;
+        margin: 17px 0 0 0;
+    }
+
+    #nav ul li a {
+        padding: 12px 44px 16px 0;
+        color: #666;
+    }
+
+    #nav .mnavlist ul li ul {
+        display: none;
+        position: relative;
+        top: 0;
+        padding: 10px 30px;
+        background: #fff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #nav .region-mobile-header a#mnav {
+        right: 330px;
+        top: -35px;
+    }
+
+    .header-utilities {
+        margin: 24px 0 0 0;
+        width: auto;
+        float:none;
+        display:none;
+    }
+
+    #nav .box, .buttons-nav-top {
+        position: absolute;
+        top: -55px;
+        right: 0;
+
+    }
+
+    .search-mobile {
+        display: block;
+        position: absolute;
+        /*top: 23px;*/
+        right: 220px;
+    }
+
 
     .trial {
         margin: 0 0 0 15px;
@@ -792,8 +1009,40 @@ p.large-customers {
         left: 0;
     }
 
+
+}
+
+@media screen and (max-width: 566px) {
+
+    #container-header {
+        padding: 0;
+        margin: 0 auto;
+        width: 300px;
+        position:relative;
+        height: 100px;
+    }
+
+    #header {
+        padding: 0;
+        width: 100%;
+        background: none;
+        background-color: #fff;
+        height: 100px;
+        position:relative;
+    }
+
+    #block-search-form {
+         margin-top: 0;
+    }
+
+
     #container-header-top {
         height: 60px;
+    }
+
+    #nav .region-mobile-header a#mnav {
+        right: 39px;
+        top: 2px !important;
     }
 
     #logo-pernixdata, .logo a img {
@@ -804,6 +1053,7 @@ p.large-customers {
     .logo {
         top: 45px;
         left: 10px;
+        margin: 15px 0 0 0;
     }
 
     #nav ul li a {
@@ -829,19 +1079,32 @@ p.large-customers {
         display:none;
     }
 
-    #nav .box {
-        float:none;
-    }
 
     .search-mobile {
         display: block;
+        position: absolute;
+        /*top: 15px;*/
+        right: 50px;
     }
 
-    .buttons-nav-top {
+
+    .trial {
+        margin: 0 0 0 15px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 21px;
+        width: auto;
+        position: relative;
+        float:left;
+        top: 0;
+        left: 0;
+    }
+
+    #nav .box, .buttons-nav-top {
         position:absolute;
         top: -46px;
-        right: 32px;
-        margin-top: 0;
+        left: 0;
+        margin: 0;
     }
 
 

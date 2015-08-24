@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 
 
     $('.slider-home').slick({
-            autoplay: true,
+            autoplay: false,
             arrows: true,
             dots: false,
             mobileFirst: true,
@@ -32,17 +32,17 @@ jQuery(document).ready(function($){
         }
     );
 
+    var navHeight = 104;
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
-    var centerH1 = ((windowHeight - 120) / 2) - 115;
+    var centerH1 = ((windowHeight - navHeight) / 2) - 115;
     var contentWidth =  1109;
     var arrowsLR = ((windowWidth - contentWidth) / 2) -100;
-    var gotoNav = ((windowWidth - contentWidth) / 2) -190;
 
 
     if(windowHeight > 600) {
-        $('.region-01').css('height', (windowHeight - 120) + 'px');
-        $('.slider-home, .slider-home-item').css('height', (windowHeight - 120) + 'px').css('width', (windowWidth) + 'px');
+        $('.region-01').css('height', (windowHeight - navHeight) + 'px');
+        $('.slider-home, .slider-home-item').css('height', (windowHeight - navHeight) + 'px').css('width', (windowWidth) + 'px');
         $('.slider-home-center').css('margin-top', centerH1 + 'px');
         /*$('#right-utility').css('top', centerH1 - 140 + 'px');*/
         $('#right-utility-nav').css('top', centerH1 + 130 + 'px');
@@ -51,10 +51,10 @@ jQuery(document).ready(function($){
     }
 
     $(window).on('resize', function() {
-            console.log('window resized');
+            //console.log('window resized');
     });
 
-/*    $(window).on('resize', function() {
+    $(window).on('resize', function() {
         var windowHeight = $(window).height();
         var windowWidth = $(window).width();
         var centerH1 = ((windowHeight - 120) / 2) - 115;
@@ -72,7 +72,7 @@ jQuery(document).ready(function($){
             $('.slick-prev').css('left', arrowsLR + 'px');
             $('.slick-next').css('right', arrowsLR + 'px');
         }
-    });*/
+    });
 
     $('.circle').click(function(){
         var goto = $(this).data('target');
