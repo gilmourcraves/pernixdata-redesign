@@ -28,7 +28,17 @@ jQuery(document).ready(function($){
             dots: false,
             mobileFirst: true,
             adaptiveHeight: true,
-            pauseOnHover: false
+            pauseOnHover: false,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        settings: "unslick"
+
+                    }
+                }
+            ]
         }
     );
 
@@ -39,8 +49,16 @@ jQuery(document).ready(function($){
     var contentWidth =  1109;
     var arrowsLR = ((windowWidth - contentWidth) / 2) -100;
 
+    $('.region-01').css('height', (windowHeight - navHeight) + 'px');
+    $('.slider-home, .slider-home-item').css('height', (windowHeight - navHeight) + 'px').css('width', (windowWidth) + 'px');
+    $('.slider-home-center').css('margin-top', centerH1 + 'px');
+    /*$('#right-utility').css('top', centerH1 - 140 + 'px');*/
+    $('#right-utility-nav').css('top', centerH1 + 130 + 'px');
+    $('.slick-prev').css('left', arrowsLR + 'px');
+    $('.slick-next').css('right', arrowsLR + 'px');
 
-    if(windowHeight > 600) {
+
+    if(windowWidth > 1084) {
         $('.region-01').css('height', (windowHeight - navHeight) + 'px');
         $('.slider-home, .slider-home-item').css('height', (windowHeight - navHeight) + 'px').css('width', (windowWidth) + 'px');
         $('.slider-home-center').css('margin-top', centerH1 + 'px');
@@ -62,15 +80,25 @@ jQuery(document).ready(function($){
         var arrowsLR = ((windowWidth - contentWidth) / 2) -100;
         var gotoNav = ((windowWidth - contentWidth) / 2) -200;
 
+        $('.region-01').css('height', (windowHeight - 60) + 'px');
+        $('.slider-home, .slider-home-item').css('height', (windowHeight - 120) + 'px').css('width', (windowWidth) + 'px');
+        $('.slider-home-center').css('margin-top', centerH1 + 'px');
+        $('#right-utility').css('top', centerH1 + 140 + 'px');
+        $('#right-utility-nav').css('top', centerH1 + 140 + 'px').css('right', gotoNav + 'px');
+        $('.slick-prev').css('left', arrowsLR + 'px');
+        $('.slick-next').css('right', arrowsLR + 'px');
 
-        if(windowHeight > 600) {
-            $('.region-01').css('height', (windowHeight - 120) + 'px');
-            $('.slider-home, .slider-home-item').css('height', (windowHeight - 120) + 'px').css('width', (windowWidth) + 'px');
+
+        if(windowWidth > 1084) {
+            $('.region-01').css('height', (windowHeight - 60) + 'px');
+            $('.slider-home, .slider-home-item').css('height', (windowHeight - 60) + 'px').css('width', (windowWidth) + 'px');
             $('.slider-home-center').css('margin-top', centerH1 + 'px');
             $('#right-utility').css('top', centerH1 + 140 + 'px');
             $('#right-utility-nav').css('top', centerH1 + 140 + 'px').css('right', gotoNav + 'px');
             $('.slick-prev').css('left', arrowsLR + 'px');
             $('.slick-next').css('right', arrowsLR + 'px');
+        } else {
+         /*   $('.region-01').hide();*/
         }
     });
 
@@ -97,6 +125,8 @@ jQuery(document).ready(function($){
             slidesToShow: 3,
             slidesToScroll: 3,
             mobileFirst: true,
+
+
 
             responsive: [
                 {

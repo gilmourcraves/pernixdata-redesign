@@ -3,31 +3,140 @@
 <head>
   <meta charset="utf-8">
   <title>Superslides - A fullscreen slider for jQuery</title>
-  <link rel="stylesheet" href="../dist/stylesheets/superslides.css">
+  <link rel="stylesheet" href="../css/superslides.css">
+
+  <style>
+    .slides-navigation .next, .slides-navigation .prev {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 43px;
+      height: 108px;
+      margin-top: -90px;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .slides-navigation .next {
+      right: 10px !important;
+      background: url(../images/sprite-controls.png) -43px -21px no-repeat;
+    }
+
+    .slides-navigation .prev {
+      left: 10px !important;
+      background: url(../images/sprite-controls.png) 0 -21px no-repeat;
+    }
+
+  </style>
 </head>
 <body>
-  <div id="slides">
-    <div class="slides-container">
-      <img src="images/people.jpeg" alt="Cinelli">
-      <img src="images/surly.jpeg" width="1024" height="682" alt="Surly">
-      <img src="images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
-      <img src="images/affinity.jpeg" width="1024" height="685" alt="Affinity">
-    </div>
 
+<div style="width: 100%; height: 120px;" >
+  NAV BAR
+</div>
+<section class="banner region-01 region-parallax" data-circleid="region-01">
+
+  <div id="slides">
+    <ul class="slides-container">
+      <li>
+        <img src="../images/bg-pernix.jpg" alt="">
+        <div class="container">
+          Slide one
+        </div>
+      </li>
+      <li>
+        <img src="../images/bg-pernix2.jpg" alt="">
+        <div class="container">
+          Slide two
+        </div>
+      </li>
+      <li>
+        <img src="../images/bg-pernix3.jpg" alt="">
+        <div class="container">
+          Slide three
+        </div>
+      </li>
+    </ul>
     <nav class="slides-navigation">
       <a href="#" class="next">Next</a>
       <a href="#" class="prev">Previous</a>
     </nav>
   </div>
 
+</section>
+  <div class="asdf">
+
+    MORE CONTENT BELOW
+  </div>
+
+
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="javascripts/jquery.easing.1.3.js"></script>
   <script src="javascripts/jquery.animate-enhanced.min.js"></script>
-  <script src="../dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
   <script>
+
+
+
     $(function() {
+
+      var navHeight = 104;
+      var windowHeight = $(window).height();
+      var windowWidth = $('body').innerWidth();
+      var centerH1 = ((windowHeight - navHeight) / 2) - 115;
+      var contentWidth =  1109;
+      var arrowsLR = ((windowWidth - contentWidth) / 2) -100;
+
+
+      if(windowHeight > 600) {
+        $('.region-01').css('height', (windowHeight - navHeight) + 'px');
+        $('.region-01').css('width', (windowWidth) + 'px');
+/*        $('.slider-home, .slider-home-item').css('height', (windowHeight - navHeight) + 'px').css('width', (windowWidth) + 'px');
+        $('.slider-home-center').css('margin-top', centerH1 + 'px');
+        /!*$('#right-utility').css('top', centerH1 - 140 + 'px');*!/
+        $('#right-utility-nav').css('top', centerH1 + 130 + 'px');*/
+/*        $('.slides-navigation .prev').css('left', arrowsLR + 'px');
+        $('.slides-navigation .next').css('right', arrowsLR + 'px');*/
+      }
+
+      $(window).on('resize', function() {
+        var windowHeight = $(window).height();
+        var windowWidth = $('body').innerWidth();
+        console.log(windowWidth);
+        var centerH1 = ((windowHeight - 120) / 2) - 115;
+        var contentWidth =  1109;
+        var arrowsLR = ((windowWidth - contentWidth) / 2) -100;
+        var gotoNav = ((windowWidth - contentWidth) / 2) -200;
+
+
+        if(windowWidth > 850) {
+          $('.region-01').css('height', (windowHeight - 120) + 'px');
+          $('.region-01').css('width', (windowWidth) + 'px');
+/*          $('.slider-home, .slider-home-item').css('height', (windowHeight - 120) + 'px').css('width', (windowWidth) + 'px');
+          $('.slider-home-center').css('margin-top', centerH1 + 'px');
+          $('#right-utility').css('top', centerH1 + 140 + 'px');
+          $('#right-utility-nav').css('top', centerH1 + 140 + 'px').css('right', gotoNav + 'px');*/
+/*          $('.slides-navigation .prev').css('left', arrowsLR + 'px');
+          $('.slides-navigation .next').css('right', arrowsLR + 'px');*/
+        } else {
+/*          $('.slides-navigation .prev').css('left', '90px');
+          $('.slides-navigation .next').css('right', '90px');*/
+        }
+      });
+
       $('#slides').superslides({
-        hashchange: true
+        hashchange: true,
+        inherit_width_from: '.region-01',
+        inherit_height_from: '.region-01',
+        pagination: false,
+        play: 3000,
+        animation_speed: 400
+
       });
     });
   </script>

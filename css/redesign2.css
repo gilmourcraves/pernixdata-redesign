@@ -233,7 +233,7 @@
 
 /*    height: 1200px;*/
 
-    display: none;
+
 
 }
 
@@ -1009,6 +1009,16 @@ p.large-customers {
         left: 0;
     }
 
+    #right-utility-nav {
+
+        width: 36px;
+
+    }
+
+    #right-utility {
+        display:none;
+    }
+
 
 }
 
@@ -1105,6 +1115,12 @@ p.large-customers {
         top: -46px;
         left: 0;
         margin: 0;
+    }
+
+    #right-utility-nav {
+
+        width: 36px;
+
     }
 
 
