@@ -104,29 +104,53 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 30px;
+	left: 120px;
 	/*background: url(images/controls.png) no-repeat 0 -32px;*/
 	background: url(../images/sprite-controls.png) 0 -21px no-repeat;
 }
 
 .bx-wrapper .bx-next {
-	right: 30px;
+	right: 120px;
 /*	background: url(images/controls.png) no-repeat -43px -32px;*/
 	background: url(../images/sprite-controls.png) -43px -21px no-repeat;
 }
 
-/*.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+@media screen and (min-width: 2200px) {
+    .bx-wrapper .bx-prev {
+        left: 520px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 520px;
+    }
 }
 
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}*/
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    .bx-wrapper .bx-prev {
+        left: 120px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bx-wrapper .bx-prev {
+        display:none;
+    }
+
+    .bx-wrapper .bx-next {
+        display:none;
+    }
+}
+
+
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
-	margin-top: -108px;
+	margin-top: -92px;
 	outline: 0;
 	width: 43px;
 	height: 108px;
