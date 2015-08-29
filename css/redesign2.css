@@ -714,6 +714,53 @@ ul#slider-home-hero li span.h1{
 /*.slider-home .slide {width: 100%; height: 100%;}*/
 
 
+/*Benefits*/
+
+.container-benefits  {
+    position:relative;
+}
+
+.container-benefits .holder {
+    overflow:visible;
+}
+
+.container-benefit-item {
+    display:none;
+    background: #f4f4f4;
+    position:absolute;
+    top: 180px;
+    height: 205px;
+    width: 1069px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-benefits h3 {
+    float: left;
+    padding: 16px 0;
+    background-color: #8b8ca6;
+    color: #fff;
+    margin-top: 0;
+    margin-right: 20px;
+    min-width: 204px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.container-benefits h3:hover, .container-benefits h3.active {
+    background-color: #002166;
+}
+
+.container-benefits h3:last-child {
+    margin-right: 0;
+}
+
+.carousel .mask .slideset {
+    width: 280px;
+    float: left;
+}
 
 
 @media screen and (max-width: 1200px) {

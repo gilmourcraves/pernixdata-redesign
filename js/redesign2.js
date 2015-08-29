@@ -47,9 +47,7 @@ jQuery(document).ready(function($){
     });
 
     utility.sliderHomeHeroResize();
-
-    var sliderHomeHero;
-
+    D
     sliderHomeHero =
         $('#slider-home-hero').bxSlider({
             pager: false,
@@ -104,6 +102,21 @@ jQuery(document).ready(function($){
 
         }
     );
+
+    $('.container-benefits h3:first').addClass('active');
+    $('.container-benefits .container-benefit-item:first').show();
+
+    $('.container-benefits h3').click(function(){
+        $('.container-benefits h3').each(function(){
+           $(this).removeClass('active');
+        });
+
+        $(this).addClass('active');
+
+        var benefitItem = $('.container-benefit-item');
+        $(benefitItem).hide();
+       $(this).next(benefitItem).show();
+    });
 
 
 });
